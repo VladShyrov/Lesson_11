@@ -1,0 +1,458 @@
+/* Подключение шрифтов */
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700");
+@import url("https://fonts.googleapis.com/css?family=Lora:regular,700");
+
+/* Стили обнуления */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+/* размер для картинок */
+img {
+  max-width: 100%;
+}
+html,
+body {
+  width: 1440px;
+  font-family: lato;
+}
+.header {
+  display: inline-block;
+  width: 1110px;
+  height: 43px;
+  margin: 67px 0px 0px 165px;
+  position: relative;
+}
+.header__logo {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+/*  
+.header__nav {
+}
+*/
+.nav__items {
+  display: inline-block;
+  margin: 0px 0px 0px 184px;
+}
+.items {
+  display: inline-block;
+  margin-left: 40px;
+}
+.nav__link {
+  width: 44px;
+  height: 28px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+  color: #222831;
+}
+.login {
+  display: inline-block;
+  margin-left: 105px;
+}
+.items__login {
+  display: inline-block;
+  color: #fff;
+}
+.nav__login {
+  color: #ff5722;
+  padding: 12px 24px;
+  width: 44px;
+  height: 19px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}
+.nav__link:hover {
+  color: #ff5722;
+}
+.nav__login:hover,
+.items__login:hover {
+  color: #fff;
+  background-color: #ff5722;
+  box-shadow: 0px 4px 16px rgba(255, 87, 34, 0.32);
+}
+.intro__text {
+  display: inline-block;
+  position: relative;
+  margin: 56px 0px 0px 165px;
+  width: 101px;
+  height: 30px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #222831;
+}
+.intro__text::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 120px;
+  width: 73px;
+  height: 2px;
+  background: #222831;
+}
+.title__text {
+  position: relative;
+  margin: 21px 0px 0px 165px;
+  width: 667px;
+  height: 201px;
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 52px;
+  color: #10375c;
+}
+.title__text_orange {
+  color: rgba(221, 44, 0, 1);
+}
+.title__body_text {
+  display: inline-block;
+  position: absolute;
+  width: 382px;
+  height: 120px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  left: 890px;
+  top: 229px;
+  color: #6a6a6a;
+}
+.body__icon {
+  position: relative;
+  margin: 60px 0px 0px 165px;
+  font-family: Lora;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 41px;
+  color: #10375c;
+}
+.icon-1 {
+  position: absolute;
+  top: 0;
+  left: 58px;
+}
+.icon-2 {
+  position: absolute;
+  top: 0;
+  left: 360px;
+}
+.icon-3 {
+  position: absolute;
+  top: 150px;
+  left: 58px;
+}
+.icon-4 {
+  position: absolute;
+  top: 150px;
+  left: 360px;
+}
+
+.icon-5 {
+  position: absolute;
+  top: 300px;
+  left: 58px;
+}
+
+.icon-6 {
+  position: absolute;
+  top: 300px;
+  left: 360px;
+}
+.icon-1::before {
+  content: "";
+  position: absolute;
+  left: -58px;
+  width: 32px;
+  height: 32px;
+  background: url(../img/meeting-room\ 1.png);
+}
+.icon-1::after {
+  content: "Meeting rooms";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 107px;
+  height: 26px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #9a9a9a;
+}
+.icon-2::before {
+  content: "";
+  position: absolute;
+  left: -58px;
+  width: 32px;
+  height: 32px;
+  background: url(../img/circus\ 1.png);
+}
+.icon-2::after {
+  content: "Event spaces";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 107px;
+  height: 26px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #9a9a9a;
+}
+.icon-3::before {
+  content: "";
+  position: absolute;
+  left: -58px;
+  width: 32px;
+  height: 32px;
+  background: url(../img/Flag.png);
+}
+.icon-3::after {
+  content: "Countries";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 107px;
+  height: 26px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #9a9a9a;
+}
+.icon-4::before {
+  content: "";
+  position: absolute;
+  left: -58px;
+  width: 32px;
+  height: 32px;
+  background: url(../img/wifi\ 1.png);
+}
+.icon-4::after {
+  content: "Internet speed";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 107px;
+  height: 26px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #9a9a9a;
+}
+.icon-5::before {
+  content: "";
+  position: absolute;
+  left: -58px;
+  width: 32px;
+  height: 32px;
+  background: url(../img/User\ 24px.png) no-repeat;
+}
+.icon-5::after {
+  content: "Startup mentors";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 150px;
+  height: 26px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #9a9a9a;
+}
+.icon-6::before {
+  content: "";
+  position: absolute;
+  left: -58px;
+  width: 32px;
+  height: 32px;
+  background: url(../img/User\ 25.png);
+}
+.icon-6::after {
+  content: "Communities inside";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 138px;
+  height: 26px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #9a9a9a;
+}
+.block__text {
+  display: inline-block;
+  position: absolute;
+  top: 430px;
+  left: 730px;
+  background: #10375c;
+  color: #fff;
+  width: 540px;
+  height: 451px;
+}
+.block__intro-text {
+  display: inline-block;
+  position: relative;
+  margin: 54px 0px 0px 54px;
+  width: 109px;
+  height: 30px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+.block__intro-text::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 120px;
+  width: 73px;
+  height: 2px;
+  background: #fff;
+}
+
+.block__title-text {
+  width: 433px;
+  height: 102px;
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 30px 0px 0px 54px;
+}
+.block__paragraph {
+  font-family: lato;
+  width: 433 px;
+  height: 150px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 40px 54px 54px 54px;
+}
+.block__footer {
+  display: inline-block;
+  position: absolute;
+  width: 1175.53px;
+  height: 225.63px;
+  top: 900px;
+  left: 0;
+  margin: 90px 0px 0px 165px;
+  text-align: center;
+}
+.footer__text {
+  display: inline-block;
+  width: 355px;
+  height: 51px;
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 51px;
+  color: #0d2c4a;
+}
+.footer__subtext {
+  margin: 25px 0px 0px 0px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #9a9a9a;
+}
+.footer__logo {
+  display: inline-block;
+  width: 1175.53px;
+  height: 66.63px;
+  margin: 55px 0px 55px 0px;
+}
+.footer__logo-link {
+  display: inline-block;
+}
+.footer__link-1 {
+  display: inline-block;
+  position: absolute;
+  left: -20px;
+  width: 120px;
+  height: 39.67px;
+  background: url(../img/Logo.png);
+}
+.footer__link-2 {
+  display: inline-block;
+  position: absolute;
+  left: 160px;
+  width: 180px;
+  height: 38.57px;
+  background: url(../img/tokopedia.png);
+}
+.footer__link-3 {
+  display: inline-block;
+  position: absolute;
+  left: 420px;
+  width: 120px;
+  height: 35.02px;
+  background: url(../img/Logoupwork.png);
+}
+.footer__link-4 {
+  display: inline-block;
+  position: absolute;
+  left: 590px;
+  width: 170px;
+  height: 36.26px;
+  background: url(../img/microsoft.png);
+}
+.footer__link-5 {
+  display: inline-block;
+  position: absolute;
+  top: 168px;
+  left: 810px;
+  width: 145.74px;
+  height: 45.67px;
+  background: url(../img/shopify.png);
+}
+.footer__link-6 {
+  display: inline-block;
+  position: absolute;
+  top: 158px;
+  left: 1000px;
+  width: 139.79px;
+  height: 66.63px;
+  background: url(../img/stripe.png);
+}
